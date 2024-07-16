@@ -4,5 +4,11 @@
 <p> 
     <%= @article.text %>
 </p>
+
+<h4>Comments</h4>
+<%= render @article.comments %>
+<h5>add a comment:</h5>
+<%= render 'comments/form' %>
+
 <%= link_to 'edit', edit_article_path(@article) %>
 <%= link_to 'archive', articles_path%>
